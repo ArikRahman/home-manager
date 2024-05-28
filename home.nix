@@ -10,6 +10,7 @@
     # ./modules/cava.nix
     # ./modules/firefox/firefox.nix
     ./modules/firefox.nix
+    ./modules/hyprland.nix
   ];
   # imports = mylib.scanPaths ./.;
 
@@ -51,6 +52,12 @@
     fastfetch
     github-desktop
     spotify
+    vesktop
+    discord
+    betterdiscord-installer
+    spacedrive
+    #vencord
+    #catppuccin
 
     #
 
