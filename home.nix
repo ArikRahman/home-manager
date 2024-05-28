@@ -111,6 +111,7 @@
   programs.zsh.enable = true;
   programs.starship.enable = true;
   programs.fzf.enable = true;
+  programs.git.enable = true;
   services.espanso.enable = true;
   # programs.firefox.enable = true;
 
