@@ -3,14 +3,17 @@
 {
   imports = [
     ./modules/zsh.nix
+    ./modules/swww.nix
     ./modules/kitty.nix
     ./modules/alacritty.nix
     ./modules/floorp.nix
+    ./modules/starship.nix
     # ./modules/zed-editor.nix
     # ./modules/cava.nix
     # ./modules/firefox/firefox.nix
     ./modules/firefox.nix
     ./modules/hyprland.nix
+    # ./modules/hyprpaper.nix
   ];
   # imports = mylib.scanPaths ./.;
 
@@ -56,6 +59,9 @@
     discord
     betterdiscord-installer
     spacedrive
+    acpi
+    hyprpaper
+    zoxide
     #vencord
     #catppuccin
 
@@ -116,7 +122,7 @@
   programs.yazi.enable = true;
   programs.thefuck.enable = true;
   programs.zsh.enable = true;
-  programs.starship.enable = true;
+  # programs.starship.enable = true;
   programs.fzf.enable = true;
   programs.git.enable = true;
   services.espanso.enable = true;

@@ -54,6 +54,11 @@
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
+  programs.hyprland = {    
+    enable = true;    
+    xwayland.enable = true;    
+    
+}; 
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -157,5 +162,15 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.05"; # Did you read the comment?
-
+  # Ensure Hyprland session file is installed
+  environment.etc."xdg/wayland-sessions/hyprland.desktop".text = ''
+    [Desktop Entry]
+    Name=Hyprland
+    Comment=Hyprland Wayland session
+    Exec=Hyprland
+    Type=Application
+  '';
+  systemd.tmpfiles.rules = [
+    "f /etc/xdg/wayland-sessions/hyprland.desktop 0644 root root - -"
+  ];
 }
