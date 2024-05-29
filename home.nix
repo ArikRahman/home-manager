@@ -1,5 +1,7 @@
 { config, pkgs, lib, mylib, ... }:
 
+#hyprctl reload && hyprctl keyword monitor "eDP-1,1920x1080@144,0x0,1.0"
+
 {
   imports = [
     ./modules/zsh.nix
@@ -8,6 +10,7 @@
     ./modules/alacritty.nix
     ./modules/floorp.nix
     ./modules/starship.nix
+    # ./modules/espanso.nix
     # ./modules/zed-editor.nix
     # ./modules/cava.nix
     # ./modules/firefox/firefox.nix
@@ -62,6 +65,8 @@
     acpi
     hyprpaper
     zoxide
+    espanso-wayland
+    killall
     #vencord
     #catppuccin
 
@@ -125,7 +130,7 @@
   # programs.starship.enable = true;
   programs.fzf.enable = true;
   programs.git.enable = true;
-  services.espanso.enable = true;
+  # services.espanso-wayland.enable = true;
   # programs.firefox.enable = true;
 
 

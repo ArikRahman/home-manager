@@ -5,14 +5,19 @@
   ##hyprctl reload && hyprctl keyword monitor "eDP-1,1920x1080@144,0x0,1.0"
   wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.settings = {
+
     "$mod" = "SUPER";
     bind =
       [
         # "$mod, P, togglesplit"
+        "$mod, L, exec, hyprctl dispatch exit"
         "$mod, F, exec, firefox"
         "$mod, Z, exec, zed"
         "$mod, E, exec, kitty"
         "$mod, Q, killactive"
+        "$mod, A, exec, appflowy"
+        "$mod, G, exec, github-desktop"
+        "$mod, O, exec, hyprctl reload && hyprctl keyword monitor 'eDP-1,1920x1080@144,0x0,1.0' && hyprpaper"
         "$mod, R, exec, hyprctl reload"  # Add this line to bind SUPER+R to reload Hyprland
         "ALT, F4, killactive"  # Added binding for Alt + F4 to close applications
         ", Print, exec, grimblast copy area"
