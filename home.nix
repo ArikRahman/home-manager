@@ -9,7 +9,7 @@
     ./modules/kitty.nix
     ./modules/alacritty.nix
     ./modules/floorp.nix
-    ./modules/starship.nix
+    #./modules/starship.nix
     # ./modules/espanso.nix
     # ./modules/zed-editor.nix
     # ./modules/cava.nix
@@ -67,6 +67,7 @@
     zoxide
     espanso-wayland
     killall
+    zoom-us
     #vencord
     #catppuccin
 
