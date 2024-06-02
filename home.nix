@@ -16,6 +16,7 @@
     # ./modules/firefox/firefox.nix
     ./modules/firefox.nix
     ./modules/hyprland.nix
+    # ./modules/zoxide.nix
     # ./modules/hyprpaper.nix
   ];
   # imports = mylib.scanPaths ./.;

@@ -1,4 +1,4 @@
-{ hostname, config, pkgs, host, ...}: 
+{ hostname, config, pkgs, host, ...}:
 {
   programs.zsh = {
     enable = true;
@@ -7,8 +7,8 @@
     syntaxHighlighting.enable = true;
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "fzf" ];
+      plugins = [ "git" "fzf" "zoxide" ];
     };
-    
+
   };
 }
