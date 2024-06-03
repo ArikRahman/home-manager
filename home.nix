@@ -3,6 +3,7 @@
 #hyprctl reload && hyprctl keyword monitor "eDP-1,1920x1080@144,0x0,1.0"
 
 {
+    nixpkgs.config.allowUnfree = true;
   imports = [
     ./modules/zsh.nix
     ./modules/swww.nix
@@ -16,6 +17,7 @@
     # ./modules/firefox/firefox.nix
     ./modules/firefox.nix
     ./modules/hyprland.nix
+    # ./modules/steam.nix
     # ./modules/zoxide.nix
     # ./modules/hyprpaper.nix
   ];
@@ -129,10 +131,11 @@
   programs.home-manager.enable = true;
   programs.yazi.enable = true;
   programs.thefuck.enable = true;
-  programs.zsh.enable = true;
+  # programs.zsh.enable = true;
   # programs.starship.enable = true;
   programs.fzf.enable = true;
   programs.git.enable = true;
+  # programs.steam.enable = true;
   # services.espanso-wayland.enable = true;
   # programs.firefox.enable = true;
 
