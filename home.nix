@@ -3,7 +3,7 @@
 #hyprctl reload && hyprctl keyword monitor "eDP-1,1920x1080@144,0x0,1.0"
 
 {
-    nixpkgs.config.allowUnfree = true;
+    # nixpkgs.config.allowUnfree = true;
   imports = [
     ./modules/zsh.nix
     ./modules/swww.nix
@@ -60,19 +60,25 @@
     maxfetch
     fastfetch
     github-desktop
+    eza
     spotify
     vesktop
-    discord
-    betterdiscord-installer
+    vscode
+    python312
+    # discord
+    # betterdiscord-installer
     spacedrive
     acpi
+    hyprshot
+    nodejs_18
     hyprpaper
     zoxide
     espanso-wayland
     killall
     zoom-us
     hyprlock
-    #vencord
+    # vencord
+    armcord
     #catppuccin
 
     #
@@ -137,6 +143,7 @@
   programs.git.enable = true;
   # programs.steam.enable = true;
   # services.espanso-wayland.enable = true;
+  # services.espanso.enable = true;
   # programs.firefox.enable = true;
 
 

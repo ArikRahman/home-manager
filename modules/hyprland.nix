@@ -14,9 +14,12 @@
         "$mod, F, exec, firefox"
         "$mod, Z, exec, zed"
         "$mod, E, exec, kitty"
+        "$mod CTRL, S, exec, steam"
         "$mod, Q, killactive"
         "$mod, A, exec, appflowy"
+        "$mod, C, exec, code"
         "$mod, G, exec, github-desktop"
+        "$mod, D, exec, armcord"
         "$mod, O, exec, hyprctl reload && hyprctl keyword monitor 'eDP-1,1920x1080@144,0x0,1.0' && hyprpaper"
         "$mod SHIFT, W, exec, hyprctl hyprpaper preload ~/Pictures/Wallpapers/yosemite.png && hyprctl hyprpaper wallpaper 'eDP-1,~/Pictures/Wallpapers/yosemite.png' && hyprctl hyprpaper unload ~/Pictures/Wallpapers/yosemite.png"
 
