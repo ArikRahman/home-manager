@@ -27,6 +27,7 @@
     XDG_DATA_DIRS = lib.strings.concatStringsSep ":" [
       "${config.home.profileDirectory}/share"
       "/run/current-system/sw/share"
+      "$HOME/.pub-cache/bin"
       "$XDG_DATA_DIRS" # Include the existing paths if they are set
     ];
   };
@@ -65,15 +66,22 @@
     vesktop
     vscode
     python312
+    flutter
     # discord
     # betterdiscord-installer
     spacedrive
+    gcc14
+    rustup
+    openssl
+    pkg-config
+    yt-dlp
     acpi
     hyprshot
     nodejs_18
     hyprpaper
     zoxide
     espanso-wayland
+    pavucontrol
     killall
     zoom-us
     hyprlock
@@ -131,7 +139,9 @@
   #
   home.sessionVariables = {
     # EDITOR = "emacs";
+    #  export PATH="$PATH":"$HOME/.pub-cache/bin"
   };
+  home.sessionPath = [ "$HOME/.pub-cache/bin"];
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
