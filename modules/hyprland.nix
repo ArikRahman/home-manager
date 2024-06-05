@@ -10,7 +10,8 @@
     bind =
       [
         # "$mod, P, togglesplit"
-        "$mod, L, exec, hyprctl dispatch exit"
+        "$mod SHIFT, L, exec, hyprctl dispatch exit"
+        "$mod, L, exec, hyprlock"
         "$mod, F, exec, firefox"
         "$mod, Z, exec, zed"
         "$mod, E, exec, kitty"

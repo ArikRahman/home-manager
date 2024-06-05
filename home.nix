@@ -22,7 +22,7 @@
     # ./modules/hyprpaper.nix
   ];
   # imports = mylib.scanPaths ./.;
-
+  #this is where paths are updates
   home.sessionVariables = {
     XDG_DATA_DIRS = lib.strings.concatStringsSep ":" [
       "${config.home.profileDirectory}/share"
@@ -81,10 +81,11 @@
     hyprpaper
     zoxide
     espanso-wayland
+    obs-studio
     pavucontrol
     killall
     zoom-us
-    hyprlock
+    # hyprlock
     # vencord
     armcord
     #catppuccin
@@ -151,6 +152,8 @@
   # programs.starship.enable = true;
   programs.fzf.enable = true;
   programs.git.enable = true;
+  programs.hyprlock.enable = true;
+  programs.spotify-player.enable = true;
   # programs.steam.enable = true;
   # services.espanso-wayland.enable = true;
   # services.espanso.enable = true;
