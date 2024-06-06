@@ -9,8 +9,10 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      /home/arik/.config/home-manager/musnix
       <home-manager/nixos>
     ];
+    musnix.enable=true;
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Bootloader.
@@ -92,7 +94,7 @@
   users.users.arik = {
     isNormalUser = true;
     description = "Arik Rahman";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "audio"];
     shell = pkgs.zsh;
     packages = with pkgs; [
     #  thunderbird

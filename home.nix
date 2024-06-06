@@ -67,9 +67,11 @@
     vscode
     python312
     flutter
+    calf
     # discord
     # betterdiscord-installer
     spacedrive
+    android-studio
     gcc14
     rustup
     openssl
@@ -85,6 +87,16 @@
     pavucontrol
     killall
     zoom-us
+    qbittorrent
+    bitwig-studio
+    yabridge
+    yabridgectl
+    #yabridgectl add "$HOME/.wine/drive_c/Program Files/Common Files/CLAP"
+    #yabridgectl sync
+    wineWowPackages.waylandFull
+    winetricks
+    #isskinu.dll
+    # winetricks vcrun6sp6
     # hyprlock
     # vencord
     armcord
@@ -142,7 +154,7 @@
     # EDITOR = "emacs";
     #  export PATH="$PATH":"$HOME/.pub-cache/bin"
   };
-  home.sessionPath = [ "$HOME/.pub-cache/bin"];
+  # home.sessionPath = [ "$HOME/.pub-cache/bin"];
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
