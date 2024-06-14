@@ -94,7 +94,7 @@
   users.users.arik = {
     isNormalUser = true;
     description = "Arik Rahman";
-    extraGroups = [ "networkmanager" "wheel" "audio"];
+    extraGroups = [ "networkmanager" "wheel" "audio" "adbusers"];
     shell = pkgs.zsh;
     packages = with pkgs; [
     #  thunderbird

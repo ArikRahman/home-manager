@@ -28,6 +28,7 @@
       "${config.home.profileDirectory}/share"
       "/run/current-system/sw/share"
       "$HOME/.pub-cache/bin"
+      # "$HOME/Android/Sdk/platform-tools/"
       "$XDG_DATA_DIRS" # Include the existing paths if they are set
     ];
   };
@@ -67,7 +68,9 @@
     vscode
     python312
     flutter
+    spotube
     calf
+    chromium
     # discord
     # betterdiscord-installer
     spacedrive
@@ -91,15 +94,20 @@
     bitwig-studio
     yabridge
     yabridgectl
+    android-tools
+    vlc
     #yabridgectl add "$HOME/.wine/drive_c/Program Files/Common Files/CLAP"
     #yabridgectl sync
     wineWowPackages.waylandFull
     winetricks
+    hyprlandPlugins.hy3
     #isskinu.dll
     # winetricks vcrun6sp6
     # hyprlock
     # vencord
     armcord
+    xplorer
+    jdk
     #catppuccin
 
     #
