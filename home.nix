@@ -58,6 +58,7 @@
     appflowy
     zed-editor
     zellij
+    ventoy-full
     reaper
     maxfetch
     fastfetch
